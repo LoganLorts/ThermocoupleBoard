@@ -1,3 +1,0 @@
-Thermocouple Resistors: 100 ohm
-Thermocouple capacitor: .1 microfarad
-Cold Junction Diode: 2N3904 bjt, short collector and base
