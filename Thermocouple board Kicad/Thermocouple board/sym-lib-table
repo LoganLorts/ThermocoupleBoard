@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "New_Library")(type "KiCad")(uri "C:/Thermocouple board/New_Library.kicad_sym")(options "")(descr ""))
   (lib (name "socket")(type "KiCad")(uri "${KIPRJMOD}/socket.kicad_sym")(options "")(descr ""))
+  (lib (name "LTC2984")(type "KiCad")(uri "${KIPRJMOD}/LTC2984.kicad_sym")(options "")(descr ""))
 )

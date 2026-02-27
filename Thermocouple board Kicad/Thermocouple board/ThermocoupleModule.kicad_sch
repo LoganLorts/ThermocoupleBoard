@@ -619,7 +619,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58440f45-cae4-4768-bc78-d52976432316")
-		(property "Reference" "X1"
+		(property "Reference" "X2"
 			(at 101.6 74.93 0)
 			(effects
 				(font
@@ -675,7 +675,7 @@
 					(unit 1)
 				)
 				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/32eac433-284b-43d9-8618-919675879cb5"
-					(reference "X17")
+					(reference "X16")
 					(unit 1)
 				)
 				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/422693e3-ce74-42d8-bc13-95f687830bc3"
@@ -683,7 +683,7 @@
 					(unit 1)
 				)
 				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/4433405b-fe70-4755-a0c8-bd27116c8350"
-					(reference "X11")
+					(reference "X10")
 					(unit 1)
 				)
 				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/4dc7ed6d-b409-4a31-b780-a95100bbfe60"
@@ -691,7 +691,7 @@
 					(unit 1)
 				)
 				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/566ea0a8-e364-44c1-b9c8-ffa17dc94e83"
-					(reference "X4")
+					(reference "X1")
 					(unit 1)
 				)
 				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/5f071213-ec34-4ce8-b90c-ce04d11d489f"
@@ -699,15 +699,15 @@
 					(unit 1)
 				)
 				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/7b410b58-fba9-4faa-a4d9-55b540be909e"
-					(reference "X3")
+					(reference "X4")
 					(unit 1)
 				)
 				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/827330c4-16b5-495e-88f3-62887b304a5d"
-					(reference "X1")
+					(reference "X2")
 					(unit 1)
 				)
 				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/8ab53b7b-45c7-4218-b396-2d3fd6d4abe2"
-					(reference "X15")
+					(reference "X14")
 					(unit 1)
 				)
 				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/a25154d8-590d-427c-bc64-5b5f20508021"
@@ -715,31 +715,31 @@
 					(unit 1)
 				)
 				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/a842cb9c-43e9-4ac5-a38e-222170cea8ff"
-					(reference "X12")
+					(reference "X11")
 					(unit 1)
 				)
 				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/aac4d453-3fc7-4972-b275-d4029d8f4716"
-					(reference "X14")
-					(unit 1)
-				)
-				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/ab20202f-0027-4c2c-a7d2-0fcaadef9f85"
-					(reference "X2")
-					(unit 1)
-				)
-				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/c72444c4-56f7-48af-818c-6543d585b9ba"
 					(reference "X13")
 					(unit 1)
 				)
+				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/ab20202f-0027-4c2c-a7d2-0fcaadef9f85"
+					(reference "X3")
+					(unit 1)
+				)
+				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/c72444c4-56f7-48af-818c-6543d585b9ba"
+					(reference "X12")
+					(unit 1)
+				)
 				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/d622269d-aa4e-4a91-be3e-93508fa2a4e0"
-					(reference "X16")
+					(reference "X15")
 					(unit 1)
 				)
 				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/ecf347cb-3b89-4b4e-91f5-780cf2d6073f"
-					(reference "X10")
+					(reference "X9")
 					(unit 1)
 				)
 				(path "/fa9dc022-1312-44b0-9fb7-b3fdf624cd97/fbfa273f-6815-4073-9b4f-8ade15ad98b2"
-					(reference "X9")
+					(reference "X17")
 					(unit 1)
 				)
 			)
@@ -1044,7 +1044,7 @@
 				)
 			)
 		)
-		(property "Footprint" "cap:CAPC17595_95N_KEM"
+		(property "Footprint" "cap:CAP_GRM155R61A106ME11_MUR_0402"
 			(at 132.08 83.82 0)
 			(effects
 				(font
