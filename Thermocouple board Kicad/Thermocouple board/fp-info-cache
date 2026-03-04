@@ -1,4 +1,4 @@
-26691644687902037
+26696961726871671
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -13,6 +13,13 @@ audio belton reverb
 0
 7
 7
+BJT
+SOT95P240X111-3N
+
+
+0
+3
+3
 Battery
 BatteryClip_Keystone_54_D16-19mm
 Battery clip for batteries with a diameter between 16-19 mm: https://www.keyelco.com/product.cfm/product_id/826
@@ -70575,6 +70582,20 @@ Yellow 5381 Series LED
 2
 LTC2984
 LQFP-48_LX_LIT
+
+LTC2984CLX-PBF 
+0
+48
+48
+LTC2984
+LQFP-48_LX_LIT-L
+
+LTC2984CLX-PBF 
+0
+48
+48
+LTC2984
+LQFP-48_LX_LIT-M
 
 LTC2984CLX-PBF 
 0
