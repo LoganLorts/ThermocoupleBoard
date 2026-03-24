@@ -1,4 +1,4 @@
-26696961726871671
+26705836683812890
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -2953,6 +2953,27 @@ Gauge Massstab 100mm SilkScreenTop Type 2
 0
 0
 0
+Capacitor_SMD
+CAPC0603X33N16V
+
+
+0
+2
+2
+Capacitor_SMD
+CAPC17595_90N_KEM16V1uf
+
+C0603C105K4RACTU 
+0
+2
+2
+Capacitor_SMD
+CAP_CL_10_SAM16V
+
+CL10X106MO8NRNC 
+0
+2
+2
 Capacitor_SMD
 CP_Elec_3x5.3
 SMT capacitor, aluminium electrolytic, 3x5.3, Cornell Dubilier Electronics 
@@ -8623,6 +8644,13 @@ connector barrel jack
 0
 3
 3
+Connector_BarrelJack
+CUI_PJ-080BH
+
+
+0
+6
+6
 Connector_Card
 CF-Card_3M_N7E50-A516xx-30
 Compact Flash Card connector, polarization inverse (https://multimedia.3m.com/mws/media/22424O/3mtm-cf-card-header-type-i-low-profile-surface-mount-ts0747.pdf)
@@ -59884,6 +59912,13 @@ DFS
 0
 4
 4
+Diode_SMD
+ESD5z5V0
+Diotec SOD-523, Diode SMD
+Diode SOD523
+0
+2
+2
 Diode_SMD
 Infineon_SG-WLL-2-3_0.58x0.28_P0.36mm
 Infineon  SG-WLL-2-3, 0.58x0.28x0.15mm, https://www.infineon.com/dgdl/Infineon-SG-WLL-2-3_SPO_PDF-Package-v02_00-EN.pdf?fileId=5546d46271bf4f9201723159ce71239d
