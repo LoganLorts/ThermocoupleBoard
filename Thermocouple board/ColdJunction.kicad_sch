@@ -400,7 +400,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MMBT3904LT1G:SOT95P240X111-3N"
+		(property "Footprint" "BJT:SOT95P240X111-3N"
 			(at 100.33 82.55 0)
 			(effects
 				(font
