@@ -2190,6 +2190,12 @@
 		(uuid "40dfc6c5-14b8-40e0-abae-8f0bbdfc60bc")
 	)
 	(junction
+		(at 167.64 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41006984-c947-4565-ae8e-ca9103bd46e5")
+	)
+	(junction
 		(at 132.08 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2242,6 +2248,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f1766c9-7be5-43c0-9dcf-d7dc06cea698")
+	)
+	(junction
+		(at 190.5 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "913e06a0-24aa-4067-a8d5-0d6bf4792e67")
 	)
 	(junction
 		(at 203.2 116.84)
@@ -2300,6 +2312,10 @@
 	(no_connect
 		(at 99.06 91.44)
 		(uuid "2f13231f-762b-476a-bc46-b169b0bf112a")
+	)
+	(no_connect
+		(at 48.26 55.88)
+		(uuid "7698adb5-1b62-4449-881e-4168933a6daf")
 	)
 	(no_connect
 		(at 99.06 121.92)
@@ -2414,6 +2430,16 @@
 			(type solid)
 		)
 		(uuid "1d9bec93-d3ff-4758-ad33-b48a279791cc")
+	)
+	(wire
+		(pts
+			(xy 190.5 92.71) (xy 190.5 96.52)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "20096d6f-909a-465e-b513-14805d0acb32")
 	)
 	(wire
 		(pts
@@ -2597,7 +2623,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 86.36) (xy 190.5 96.52)
+			(xy 190.5 86.36) (xy 190.5 92.71)
 		)
 		(stroke
 			(width 0.1524)
@@ -2757,6 +2783,26 @@
 	)
 	(wire
 		(pts
+			(xy 189.23 92.71) (xy 190.5 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c362273-2041-4b90-ab68-4cc4cc345813")
+	)
+	(wire
+		(pts
+			(xy 176.53 92.71) (xy 179.07 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6eaaa56e-61f9-4cf5-b6fc-5a5d90547314")
+	)
+	(wire
+		(pts
 			(xy 119.38 93.98) (xy 121.92 93.98)
 		)
 		(stroke
@@ -2787,6 +2833,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 92.71) (xy 168.91 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7914aa94-efb3-4d3d-a8fa-77bdcc2f8adb")
+	)
+	(wire
+		(pts
 			(xy 137.16 91.44) (xy 139.7 91.44)
 		)
 		(stroke
@@ -2807,7 +2863,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 86.36) (xy 167.64 96.52)
+			(xy 167.64 86.36) (xy 167.64 92.71)
 		)
 		(stroke
 			(width 0.1524)
@@ -2884,6 +2940,16 @@
 			(type solid)
 		)
 		(uuid "967f1e3f-7503-4f9c-8c49-1b10460c7f36")
+	)
+	(wire
+		(pts
+			(xy 167.64 92.71) (xy 167.64 96.52)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "987a02a5-159c-4a2d-9974-960a1536c90f")
 	)
 	(wire
 		(pts
@@ -3164,16 +3230,6 @@
 			(type solid)
 		)
 		(uuid "c40f0c4f-772b-4ff5-989a-03a2bfe9a33a")
-	)
-	(wire
-		(pts
-			(xy 53.34 55.88) (xy 48.26 55.88)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "c440d21e-63b3-4494-b76f-64894b156503")
 	)
 	(wire
 		(pts
@@ -3982,6 +4038,174 @@
 		)
 	)
 	(symbol
+		(lib_id "Power-eagle-import:LED1206")
+		(at 173.99 92.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "304caec2-94cf-4405-b783-6655a8f5de4c")
+		(property "Reference" "D2"
+			(at 169.418 89.281 90)
+			(effects
+				(font
+					(size 1.778 1.778)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "LED1206"
+			(at 169.418 94.615 90)
+			(effects
+				(font
+					(size 1.778 1.778)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "Power:LED-1206"
+			(at 173.99 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "COST" "$0.15"
+			(at 173.99 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "DIG-PN" "  160-1404-2-ND"
+			(at 173.99 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MF-PN" " LTST-C150KGKT"
+			(at 173.99 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "A"
+			(uuid "6b9ca98e-ff27-42e9-b4fc-f8522424d20b")
+		)
+		(pin "C"
+			(uuid "9028ec39-0f29-42d2-ba32-356947149801")
+		)
+		(instances
+			(project "HeatingBoard"
+				(path "/f9b4e86f-9747-464e-a8cd-5899416c6d26/cc847f9c-bd14-44b4-b6a2-e8e75a25e39f"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Power-eagle-import:R-EU_R1206")
+		(at 184.15 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "31844da6-bb25-4aad-9626-bf7f3e03635e")
+		(property "Reference" "R2"
+			(at 180.34 91.2114 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "1k"
+			(at 180.34 96.012 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Power:R1206"
+			(at 184.15 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 184.15 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7592afd3-f5da-4f57-a34a-a1175125978b")
+		)
+		(pin "1"
+			(uuid "8e936629-a6e8-4f2f-bf42-12575f42f669")
+		)
+		(instances
+			(project "HeatingBoard"
+				(path "/f9b4e86f-9747-464e-a8cd-5899416c6d26/cc847f9c-bd14-44b4-b6a2-e8e75a25e39f"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Power-eagle-import:R-EU_R1206")
 		(at 144.78 91.44 180)
 		(unit 1)
@@ -4702,7 +4926,7 @@
 				(hide yes)
 			)
 		)
-		(property "COST" "$0.40"
+		(property "COST" "$0.23"
 			(at 182.88 86.36 0)
 			(effects
 				(font
@@ -4712,7 +4936,7 @@
 				(hide yes)
 			)
 		)
-		(property "DIG-PN" "160-1643-1-ND"
+		(property "DIG-PN" "160-1643-2-ND"
 			(at 182.88 86.36 0)
 			(effects
 				(font
