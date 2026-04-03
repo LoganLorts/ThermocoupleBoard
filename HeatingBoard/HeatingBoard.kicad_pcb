@@ -3449,7 +3449,7 @@
 				(justify right top)
 			)
 		)
-		(property "Value" "25R"
+		(property "Value" "154R"
 			(at -1.27 2.54 0)
 			(layer "F.Fab")
 			(uuid "9c3a44e1-7dc7-4155-b008-2074dee8ba24")
