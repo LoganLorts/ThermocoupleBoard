@@ -30,7 +30,10 @@ const uint8_t LTC_TC_CHANNELS[NUM_TCs] = {4, 6, 8, 10, 12};
 #endif
 
 #define MAXFILES 10000
-#define FLUSH_INTERVAL_SAMPLES 5
+
+// Default SD flush interval.
+// This can now be changed using the f# serial command.
+unsigned long flushIntervalSamples = 5;
 
 // Faster SPI than previous 100 kHz
 SPISettings ltc2984_spi_settings(1000000, MSBFIRST, SPI_MODE0);
@@ -157,6 +160,8 @@ const char HelpText[] =
 "  o      -- Turn heater power off, continue logging\r\n"
 "  ss     -- Print acquisition rate\r\n"
 "  s#     -- Set acquisition interval index 0..10\r\n"
+"  f#     -- Set SD flush interval in samples\r\n"
+"  ff     -- Print current SD flush interval\r\n"
 "  T#     -- Set target boundary temperature, turn PID on, and log\r\n"
 "  q#     -- Set target boundary temperature only\r\n"
 "  gg     -- Report PID gains\r\n"
@@ -363,7 +368,9 @@ void setHeater(int duty)
   if (duty > 1023) duty = 1023;
 
   iDC = duty;
-  analogWrite(HEATER_PIN, iDC);
+
+  int pwmValue = map(iDC, 0, 1023, 0, 255);
+  analogWrite(HEATER_PIN, pwmValue);
 }
 
 void stopHeater()
@@ -443,7 +450,7 @@ void WriteToSD(void)
 
   loggedSamplesSinceFlush++;
 
-  if (loggedSamplesSinceFlush >= FLUSH_INTERVAL_SAMPLES)
+  if (loggedSamplesSinceFlush >= flushIntervalSamples)
   {
     logfile.flush();
     loggedSamplesSinceFlush = 0;
@@ -635,6 +642,65 @@ void parseSerialInput(void)
     return;
   }
 
+  // ====================================================
+  // SD flush interval
+  //
+  // f# = set flush interval
+  // ff = report current flush interval
+  //
+  // Examples:
+  // f1   -> flush every sample
+  // f5   -> flush every 5 samples
+  // f20  -> flush every 20 samples
+  // ff   -> print current setting
+  // ====================================================
+
+  if (*inbuffPtr == 'f')
+  {
+    inbuffPtr++;
+
+    if (*inbuffPtr == 'f')
+    {
+      Serial.print("SD flush interval = ");
+      Serial.print(flushIntervalSamples);
+      Serial.println(" samples");
+      return;
+    }
+
+    char flushStr[12] = {0};
+    uint8_t flushIndex = 0;
+
+    while (*inbuffPtr != '\0')
+    {
+      if ((*inbuffPtr >= '0') &&
+          (*inbuffPtr <= '9') &&
+          flushIndex < sizeof(flushStr) - 1)
+      {
+        flushStr[flushIndex++] = *inbuffPtr;
+      }
+
+      inbuffPtr++;
+    }
+
+    unsigned long newFlushInterval = atol(flushStr);
+
+    if (newFlushInterval < 1)
+    {
+      newFlushInterval = 1;
+    }
+
+    flushIntervalSamples = newFlushInterval;
+
+    // Start counting the new interval from zero.
+    loggedSamplesSinceFlush = 0;
+
+    Serial.print("SD flush interval set to ");
+    Serial.print(flushIntervalSamples);
+    Serial.println(" samples");
+
+    return;
+  }
+
   if (*inbuffPtr == 'q' || *inbuffPtr == 'T')
   {
     bool startControl = (*inbuffPtr == 'T');
@@ -820,8 +886,6 @@ void setup()
 {
   Serial.begin(115200);
   delay(1500);
-
-  analogWriteResolution(10);
 
   for (uint8_t i = 0; i < NUM_TCs; i++)
   {
